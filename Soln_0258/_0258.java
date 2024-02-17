@@ -11,5 +11,6 @@ public class _0258 {
     int xnum = sc.nextInt();
     int result = addDigits(xnum);
     System.out.println("Result: " + result);
+    sc.close();;
   }
 }

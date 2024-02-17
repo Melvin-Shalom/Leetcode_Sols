@@ -30,5 +30,6 @@ public class _0013 {
     
         _0013 soln = new _0013();
         System.out.println(soln.romanToInt(xrom));
+        sc.close();
     }
 }
