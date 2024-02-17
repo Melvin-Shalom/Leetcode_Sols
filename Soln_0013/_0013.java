@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Solution {
+public class _0013 {
   public int romanToInt(String s) {
     int ans = 0;
     int[] roman = new int[128];
@@ -28,7 +28,7 @@ public class Solution {
         System.out.print("Enter the digits: ");
         String xrom = sc.next().toUpperCase();
     
-        Solution soln = new Solution();
+        _0013 soln = new _0013();
         System.out.println(soln.romanToInt(xrom));
     }
 }

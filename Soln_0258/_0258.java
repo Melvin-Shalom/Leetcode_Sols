@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Solution {
+public class _0258 {
   public static int addDigits(int num) {
     return 1 + (num - 1) % 9;
   }
