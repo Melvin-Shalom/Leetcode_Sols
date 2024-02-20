@@ -1,21 +1,30 @@
 package Leetcode_Sols.Soln_0002;
 
+class ListNode {
+    int val;
+    ListNode next;
+    
+    ListNode(int val) {
+        this.val = val;
+    }
+}
+
 class Solution {
-    public ks addTwoNumbers(ks l1, ks l2) {
-        ks dummy = new ks(0);
-        ks curr = dummy;
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
         int carry = 0;
 
-        while (l1 != null || l2 != null || carry > 0){
-            if (l1 != null){
+        while (l1 != null || l2 != null || carry > 0) {
+            if (l1 != null) {
                 carry += l1.val;
                 l1 = l1.next;
             }
-            if (l2!= null){
+            if (l2 != null) {
                 carry += l2.val;
                 l2 = l2.next;
             }
-            curr.next = new ks(carry % 10);
+            curr.next = new ListNode(carry % 10);
             carry /= 10;
             curr = curr.next;
         }
@@ -23,4 +32,3 @@ class Solution {
         return dummy.next;
     }
 }
-
