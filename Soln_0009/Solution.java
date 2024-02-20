@@ -1,4 +1,4 @@
-package Leetcode_Sols.Soln_009;
+package Leetcode_Sols.Soln_0009;
 
 class Solution {
     public boolean isPalindrome(int x) {
