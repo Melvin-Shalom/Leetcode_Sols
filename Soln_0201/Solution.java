@@ -5,8 +5,7 @@ class Solution {
         while (m != n) {
         m >>= 1;
         n >>= 1;
-        ++Noww;
-        }
+        ++Noww;        }
 
         return m << Noww;
 
